@@ -187,12 +187,12 @@ elif page=="Chat with Ai":
         ai_input=user_input               
             
     with st.spinner("Getting answers..."):
-        url = "https://openrouter.ai/api/v1/chat/completions"
+        url = "url"
         headers = {
-            "Authorization": "Bearer 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"
+            "Authorization": "Bearer API KEY"
         }
         data = {
-            "model": "meta-llama/llama-3.3-70b-instruct:free",
+            "model": "model_name",
             "messages": [{"role": "system", "content": "you are a data analysis expert. You help users analyze their data files and answer questions based on the data provided."}, {"role": "user", "content": ai_input}]
         }
 
@@ -263,4 +263,5 @@ elif page=="Chat with Ai":
 
 
  
+
 
